@@ -1,3 +1,6 @@
+1) display total number of emplyees from department where 
+employee of '1001' works
+
 select Total_Num_Of_Emp from Department 
 inner join Employee on Employee.Dept_id = Department.Dept_id
 where Emp_id = 1001
