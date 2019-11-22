@@ -1,3 +1,12 @@
 select Total_Num_Of_Emp from Department 
 inner join Employee on Employee.Dept_id = Department.Dept_id
 where Emp_id = 1001
+
+2) to find sum of all subjects of all students : 
+
+select stud_name,eng_score+math_score+gk_score as
+total_marks from score inner join student on
+score.stud_id=student.stud_id;
+
+3) find avg of marks in maths of all students :
+select avg(maths_score) as average_of_maths from score; 
